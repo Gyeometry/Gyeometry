@@ -39,16 +39,16 @@
 
 ## 👋 About Me
 
-Hi! I'm **Gyeom Kim**, an undergraduate researcher studying **Computer Engineering** at **Hanbat National University**, South Korea.
+Hi! I'm **Gyeom Kim**, an undergraduate researcher in **Computer Engineering** at **Hanbat National University**, South Korea.
 
-My research focuses on **Computer Vision and Deep Learning**, particularly detecting extremely small objects and identifying previously unseen objects.
+My research focuses on **Computer Vision and Deep Learning**, particularly tiny object detection and open-set semantic segmentation.
 
-I'm interested in understanding **why models fail**, exploring alternative approaches, and validating improvements through systematic experiments.
+I'm interested in understanding **why models fail**, identifying their limitations, and developing better approaches through systematic experimentation.
 
 - 🎓 **Education:** Hanbat National University, Computer Engineering
 - 🔬 **Research:** Tiny Object Detection & Open-Set Semantic Segmentation
 - 🧪 **Approach:** Failure Analysis, Model Improvement & Experimental Validation
-- 🎯 **Interest:** Robust visual recognition under challenging conditions
+- 🎯 **Interest:** Robust Visual Recognition under Challenging Conditions
 
 <br>
 
@@ -66,7 +66,7 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 <li>Aerial imagery analysis</li>
 <li>DETR-based object detection</li>
 <li>High-resolution feature refinement</li>
-<li>Detection of very tiny objects</li>
+<li>Very tiny object localization</li>
 </ul>
 
 </td>
@@ -104,7 +104,7 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 ![Accepted](https://img.shields.io/badge/Status-Accepted-238636?style=flat-square)
 ![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
 
-> Proposed a density-aware query score adjustment method for DETR-based tiny object detection, improving F1 scores while preserving mAP.
+> Proposed an inference-time density-aware query score adjustment method, improving F1 by **0.3–0.5 percentage points** across Dome-DETR model scales while maintaining comparable mAP on AI-TODv2.
 
 <br>
 
@@ -119,7 +119,7 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 ![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
 ![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
 
-> Investigates high-frequency enhancement of high-resolution features for detecting extremely small objects in aerial imagery.
+> Proposed local high-frequency enhancement of high-resolution features, improving the mean AP across Very Tiny, Tiny, and Small groups by **3.3 percentage points** over SMWG-DETR.
 
 <br>
 
@@ -132,7 +132,7 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 ![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
 ![Journal](https://img.shields.io/badge/Type-Journal_Manuscript-7C3AED?style=flat-square)
 
-> Investigates learnable high-resolution feature refinement to improve localization and detection of very tiny objects.
+> Proposed learnable high-resolution feature refinement, achieving **+3.7 percentage points in mean AP** and **+5.6 percentage points in Very Tiny AP** over SMWG-DETR on AI-TODv2.
 
 <br>
 
@@ -146,16 +146,45 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 ![DETR](https://img.shields.io/badge/DETR-7C3AED?style=flat-square)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-**Research Focus:** Improving the detection of extremely small objects in aerial imagery.
+**Research Focus:** Improving the detection and localization of extremely small objects in aerial imagery.
 
-- Investigated limitations of DETR-based tiny object detectors using the AI-TODv2 benchmark.
-- Developed density-aware query score adjustment to improve query selection across sparse and dense regions.
-- Explored high-resolution feature enhancement and refinement to preserve fine-grained spatial information.
-- Conducted comparative experiments and size-specific detection performance analysis.
+- Investigated limitations of DETR-based detectors for tiny objects using AI-TODv2.
+- Explored density-aware query selection and high-resolution feature refinement.
+- Conducted comparative experiments and failure analysis across different object sizes.
 
-**Key Results**
-- Improved F1 scores by **0.3–0.5 percentage points** across Dome-DETR model scales using density-aware score adjustment.
-- Achieved **+3.7 percentage points in mean AP** and **+5.6 percentage points in Very Tiny AP** over SMWG-DETR through high-resolution feature refinement.
+**Key Result:** Improved Very Tiny AP by **5.6 percentage points** compared with SMWG-DETR using high-resolution feature refinement.
+
+<details>
+<summary><b>🔎 Research Details & Experimental Approach</b></summary>
+
+<br>
+
+**1. Density-Aware Query Score Adjustment (DAQSA)**
+
+- Analyzed query selection imbalance between sparse and dense object regions.
+- Adjusted encoder query scores based on local density information.
+- Evaluated the method across Dome-DETR-S, M, and L.
+- Observed consistent F1 improvements while largely preserving mAP.
+
+**2. High-Resolution Feature Enhancement**
+
+- Investigated spatial information loss caused by feature downsampling.
+- Introduced stride-4 high-resolution features into the detection pipeline.
+- Extracted local high-frequency components using average-pooling residuals.
+- Evaluated detection performance across Very Tiny, Tiny, and Small object groups.
+
+**3. Learnable Feature Refinement**
+
+- Extended high-frequency enhancement using lightweight depthwise and pointwise convolutions.
+- Applied a learnable scaling parameter to control residual feature contributions.
+- Compared performance against SMWG-DETR and other DETR-based detectors.
+- Analyzed detection accuracy, localization quality, and computational cost.
+
+**Evaluation Note**
+
+The reported mean AP is the equally weighted arithmetic mean of AP across the Very Tiny, Tiny, and Small object groups, rather than overall COCO mAP.
+
+</details>
 
 <br>
 
@@ -165,113 +194,42 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 ![Open Set](https://img.shields.io/badge/Open--Set_Recognition-7C3AED?style=flat-square)
 ![Ongoing](https://img.shields.io/badge/Research-Ongoing-087E8B?style=flat-square)
 
-**Research Focus:** Identifying unknown objects in underwater sonar imagery.
+**Research Focus:** Discovering previously unseen objects in underwater sonar imagery.
 
 - Investigating open-set semantic segmentation using Forward-Looking Sonar (FLS) imagery.
-- Analyzing limitations of uncertainty-based methods in distinguishing known and unknown objects.
-- Evaluating alternative unknown-object proposal generation strategies.
-- Designing controlled experiments to isolate failure sources in open-set inference.
-- Exploring the relationship between feature representations, unknown-object recall, and false-positive predictions.
+- Analyzing the limitations of uncertainty-based unknown-object detection.
+- Designing controlled experiments to isolate the causes of unknown-object detection failures.
 
-**Current Direction**
+**Current Direction:** Improving reliable unknown-object discovery while reducing false-positive predictions.
 
-Understanding why unknown objects are missed or incorrectly classified, with an emphasis on failure analysis and reliable unknown-object discovery.
-
-<br>
-
----
-
-## 💻 Selected Course Projects
-
-### 🏆 01. Face Anti-Spoofing Image Classification
-
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-1B3A6B?style=flat-square)
-![VLM](https://img.shields.io/badge/Vision--Language-7C3AED?style=flat-square)
-![1st Place](https://img.shields.io/badge/Course_Competition-1st_Place-238636?style=flat-square)
-
-**AI Course Team Competition | Hanbat National University, 2026**
-
-- Developed a classifier to distinguish genuine face images from spoofing attacks.
-- Utilized MoGA-ETA image-text representations and Prompt-Diff relation features.
-- Applied MLP classification, test-time augmentation, and soft ensembling.
-- Achieved **99.41% accuracy** on the final private leaderboard.
-- Ranked **1st as a 3-member team** in a course-level competition involving approximately **80 students**.
+<details>
+<summary><b>🔎 Research Details & Experimental Approach</b></summary>
 
 <br>
 
-### ⚙️ 02. Embedded Vision & Smart Elevator Control
+**1. Baseline Analysis**
 
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-![FPGA](https://img.shields.io/badge/FPGA-1B3A6B?style=flat-square)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+- Evaluated open-set segmentation performance under different unknown-object difficulty levels.
+- Analyzed precision, recall, F1, AUROC, and AUPRC.
+- Investigated false-positive predictions and failure cases in unknown-object detection.
 
-**Regular Coursework Team Project | Hanbat National University**
+**2. Unknown-Object Proposal Investigation**
 
-**Project Overview:** A prototype elevator control system integrating camera-based occupancy detection with FPGA-based hardware control.
+- Examined cases where unknown-object candidates were never formed or were lost during inference.
+- Evaluated alternative proposal-generation strategies.
+- Analyzed trade-offs between unknown-object recovery and false-positive burden.
 
-**My Contributions**
-- Implemented Raspberry Pi-based person detection and occupancy analysis using camera input.
-- Developed occupancy decision logic based on detected person regions.
-- Integrated Raspberry Pi and FPGA through GPIO-based state communication.
-- Worked on motor-control functionality and hardware integration.
+**3. Controlled Experiments**
 
-**System Architecture**
+- Designed direct-supervision experiments to investigate the upper bound of known/unknown separability.
+- Compared native open-set inference with explicitly supervised unknown-object recognition.
+- Studied the effect of backbone pretraining on known-class accuracy and unknown-object discovery.
 
-`Camera → Raspberry Pi → GPIO → FPGA → Elevator Control`
+**Research Status**
 
-<br>
+Ongoing research. Current results are used primarily for failure diagnosis and method development rather than claims of a finalized open-set solution.
 
-### 🔐 03. IoT Smart Door Lock with Face Recognition
-
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-1B3A6B?style=flat-square&logo=flask&logoColor=white)
-![IoT](https://img.shields.io/badge/IoT-7C3AED?style=flat-square)
-
-**Regular Coursework Team Project | Hanbat National University**
-
-**Project Overview:** An IoT-based smart door lock prototype using distributed face recognition and mobile-based user management.
-
-**My Contributions**
-- Built the Raspberry Pi server for user data management and communication.
-- Developed an Android application for user registration, face-image upload, and management.
-- Integrated the Android application with the Raspberry Pi server using HTTP-based APIs.
-- Worked on server-device communication within a distributed IoT architecture.
-
-**System Features**
-- Raspberry Pi 3 server and Raspberry Pi 5 edge-device architecture.
-- Face detection using OpenCV Haar Cascade.
-- Face embedding extraction using MobileFaceNet.
-- Cosine similarity-based face verification.
-- HTTP-based communication and synchronization.
-
-**System Architecture**
-
-`Android App → Raspberry Pi 3 Server → Raspberry Pi 5 Edge Device → Door Lock`
-
-<br>
-
-### 🎮 04. Angry Humans — 3D Physics-Based Slingshot Game
-
-![Unity](https://img.shields.io/badge/Unity-20232A?style=flat-square&logo=unity&logoColor=white)
-![CSharp](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=sharp&logoColor=white)
-![Game Physics](https://img.shields.io/badge/Game_Physics-1B3A6B?style=flat-square)
-![Course Project](https://img.shields.io/badge/Course_Project-7C3AED?style=flat-square)
-
-**Regular Coursework Team Project | Hanbat National University | 2-Member Team**
-
-**Project Overview:** A 3D physics-based slingshot puzzle game developed with Unity, featuring projectile mechanics, destructible structures, and interactive gameplay elements.
-
-**My Contributions**
-- Implemented projectile launching, collision interactions, and physics-based structure destruction.
-- Developed trajectory prediction and visualization using gravity-based equations and Unity LineRenderer.
-- Implemented mouse-drag controls for launch direction and power, including nonlinear power adjustment for better usability.
-- Developed interactive mechanics including portals, bombs, collectible coins, and skill activation.
-- Implemented additional gameplay features such as boss cutscenes, camera controls, and sound management.
-
-**Technical Focus**
-
-`Unity` · `C#` · `Projectile Motion` · `Collision Handling` · `Gameplay Programming`
+</details>
 
 <br>
 
@@ -289,21 +247,32 @@ Understanding why unknown objects are missed or incorrectly classified, with an 
 
 **Competition Result:** 103rd out of 985 (Top 10.5%)
 
-**Project Overview:** A machine-learning competition focused on forecasting wind power generation under accuracy and reliability evaluation criteria.
+**Project Overview:** Wind power generation forecasting using machine-learning models, feature engineering, and reliability-aware prediction methods.
 
-**Technical Approach**
-- Developed group-specific wind power prediction models using LightGBM.
-- Conducted feature engineering and comparative experiments across multiple feature configurations.
-- Evaluated forecasting performance using nMAE and FiCR-related metrics.
-- Explored reliability-aware post-processing to improve the competition's combined evaluation score.
+**Key Contributions**
+- Developed group-specific forecasting models using LightGBM.
+- Conducted extensive feature engineering and comparative experiments.
+- Improved public evaluation performance through reliability-aware prediction adjustments.
 
 **Observed Public Leaderboard Improvements**
+
 - Total Score: **0.6149 → 0.6269**
 - FiCR: **0.3599 → 0.3806**
 
-**Tech Stack**
+**Tech Stack:** `Python` · `LightGBM` · `Feature Engineering` · `Time-Series Forecasting`
 
-`Python` · `LightGBM` · `Feature Engineering` · `Time-Series Forecasting`
+<details>
+<summary><b>🔎 Technical Details</b></summary>
+
+<br>
+
+- Explored multiple feature configurations and model combinations.
+- Evaluated forecasting accuracy and reliability-oriented metrics.
+- Investigated the relationship between prediction stability and competition score.
+- Applied group-specific modeling and post-processing adjustments.
+- Analyzed unsuccessful experiments to guide subsequent model selection.
+
+</details>
 
 🔗 [Competition Page](https://dacon.io/competitions/official/236727/overview/description)
 
@@ -320,28 +289,196 @@ Understanding why unknown objects are missed or incorrectly classified, with an 
 
 **Leaderboard Snapshot:** 114th out of 321 teams (final ranking unverified)
 
-**Final Score:** **0.50266**
+**Leaderboard Score:** **0.50266**
 
-**Project Overview:** A multi-stage AI-assisted video forensics pipeline for analyzing black-box recordings, collision events, and vehicle driving behavior under an offline inference time limit.
+**Project Overview:** A multi-stage video analysis project addressing recaptured-video detection, collision-scene reasoning, and vehicle motion classification under offline inference constraints.
 
-**Technical Approach**
+**Key Contributions**
+- Investigated a multi-stage approach combining video classification, object tracking, and motion analysis.
+- Evaluated stage-level predictions and reviewed accident-scene interpretation results.
+- Conducted experimental validation, submission decisions, and data/model licensing checks.
 
-- **Stage 1 — Recaptured-Video Detection:** Integrated Swin Transformer classification, temporal forensic features, and DINO-based auxiliary analysis.
-- **Stage 2 — Collision Scene Analysis:** Combined vehicle detection, tracking, trajectory features, geometric entry-time estimation, and road-corridor reasoning.
-- **Stage 3 — Vehicle Motion Recognition:** Applied optical flow, RANSAC-based camera motion estimation, RAFT-small, and DINOv2 context-based correction.
-- Evaluated stage-level performance through repeated competition submissions and investigated robustness under runtime constraints.
-- Performed manual review of collision scenes, experimental validation, submission decisions, and checks of external data and model licensing.
+**Tech Stack:** `Python` · `PyTorch` · `OpenCV` · `Swin Transformer` · `DINOv2` · `RAFT` · `YOLOP`
+
+<details>
+<summary><b>🔎 Technical Details & Challenges</b></summary>
+
+<br>
+
+**Stage 1 — Recaptured-Video Detection**
+
+- Swin Transformer-based image classification.
+- Temporal forensic features and auxiliary DINO-based analysis.
+- Conservative decision rules for ambiguous recordings.
+
+**Stage 2 — Collision Scene Analysis**
+
+- Vehicle detection and lightweight object tracking.
+- Trajectory features and geometric entry-time estimation.
+- Road-corridor reasoning and contextual analysis.
+
+**Stage 3 — Vehicle Motion Recognition**
+
+- Optical-flow-based motion analysis.
+- RANSAC-based camera motion estimation.
+- RAFT-small flow features and DINOv2-based contextual correction.
 
 **Technical Challenges**
-- Managing multiple video-analysis models within a 60-minute offline inference limit.
-- Maintaining consistency across independent stage predictions.
-- Debugging submission packaging issues, missing checkpoints, and model dependencies.
 
-**Tech Stack**
+- Integrating multiple models under a 60-minute offline inference constraint.
+- Handling dependencies and checkpoint packaging for submission.
+- Maintaining consistency across the three evaluation stages.
+- Balancing model complexity, inference time, and prediction robustness.
 
-`Python` · `PyTorch` · `OpenCV` · `Swin Transformer` · `DINOv2` · `RAFT` · `YOLOP` · `Object Tracking`
+**Verification Note**
+
+The architecture summary is based on preserved project artifacts. The latest preserved package was not independently confirmed as a successfully scored submission. Model implementation was assisted by Codex, while experimental decisions, manual review, and validation were part of the project workflow.
+
+</details>
 
 🔗 [Competition Page](https://www.dacon.io/competitions/official/236753/overview/description)
+
+<br>
+
+---
+
+## 💻 Selected Course Projects
+
+### 🏆 01. Face Anti-Spoofing Image Classification
+
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-1B3A6B?style=flat-square)
+![VLM](https://img.shields.io/badge/Vision--Language-7C3AED?style=flat-square)
+![1st Place](https://img.shields.io/badge/Course_Competition-1st_Place-238636?style=flat-square)
+
+**AI Course Team Competition | Hanbat National University, 2026**
+
+**Result:** 1st place on the final private leaderboard as a 3-member team in a course-level competition involving approximately 80 students.
+
+**Private Leaderboard Accuracy:** **99.41%**
+
+- Developed an image-text feature-based approach for face anti-spoofing classification.
+- Combined Prompt-Diff representations, MLP classification, test-time augmentation, and soft ensembling.
+
+<details>
+<summary><b>🔎 Implementation Details</b></summary>
+
+<br>
+
+- Utilized MoGA-ETA image-text representations.
+- Constructed Prompt-Diff relation features for classification.
+- Applied an MLP-based classification approach.
+- Explored test-time augmentation and model ensembling.
+- Evaluated performance using the competition's private leaderboard.
+
+</details>
+
+<br>
+
+### ⚙️ 02. Embedded Vision & Smart Elevator Control
+
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![FPGA](https://img.shields.io/badge/FPGA-1B3A6B?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+
+**Regular Coursework Team Project | Hanbat National University**
+
+**Project Overview:** An elevator control prototype integrating camera-based occupancy analysis with FPGA-controlled hardware.
+
+**My Contributions**
+- Implemented Raspberry Pi-based person detection and occupancy analysis.
+- Developed occupancy-state decision logic and GPIO communication with FPGA hardware.
+
+**System Architecture**
+
+`Camera → Raspberry Pi → GPIO → FPGA → Elevator Control`
+
+<details>
+<summary><b>🔎 Implementation Details</b></summary>
+
+<br>
+
+- Captured and processed camera input on Raspberry Pi.
+- Analyzed detected person regions to determine occupancy conditions.
+- Communicated occupancy information through GPIO signals.
+- Worked on motor-control functionality and hardware integration.
+- Tested communication between the vision and elevator-control subsystems.
+
+</details>
+
+<br>
+
+### 🔐 03. IoT Smart Door Lock with Face Recognition
+
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-1B3A6B?style=flat-square&logo=flask&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-7C3AED?style=flat-square)
+
+**Regular Coursework Team Project | Hanbat National University**
+
+**Project Overview:** A distributed IoT smart door lock prototype integrating face recognition, Raspberry Pi devices, and an Android management application.
+
+**My Contributions**
+- Built a Raspberry Pi server for user data and communication management.
+- Developed an Android application for user registration and face-image management.
+- Integrated the mobile application and server through HTTP APIs.
+
+**System Architecture**
+
+`Android App → Raspberry Pi 3 Server → Raspberry Pi 5 Edge Device → Door Lock`
+
+<details>
+<summary><b>🔎 System Features & Implementation</b></summary>
+
+<br>
+
+**System Features**
+- OpenCV Haar Cascade-based face detection.
+- MobileFaceNet-based facial feature extraction.
+- Cosine similarity-based face verification.
+- Sensor-triggered recognition and door-control logic.
+
+**System Integration**
+- Raspberry Pi 3 server for data management and API communication.
+- Raspberry Pi 5 edge device for recognition and hardware control.
+- Android Studio application for image upload and user management.
+- Flask-based HTTP communication and synchronization.
+
+</details>
+
+<br>
+
+### 🎮 04. Angry Humans — 3D Physics-Based Slingshot Game
+
+![Unity](https://img.shields.io/badge/Unity-20232A?style=flat-square&logo=unity&logoColor=white)
+![CSharp](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=sharp&logoColor=white)
+![Game Physics](https://img.shields.io/badge/Game_Physics-1B3A6B?style=flat-square)
+![Course Project](https://img.shields.io/badge/Course_Project-7C3AED?style=flat-square)
+
+**Regular Coursework Team Project | Hanbat National University | 2-Member Team**
+
+**Project Overview:** A Unity-based 3D slingshot puzzle game featuring projectile physics, destructible structures, and interactive mechanics.
+
+**My Contributions**
+- Implemented projectile motion, collision interactions, and structure destruction.
+- Developed gravity-based trajectory prediction and mouse-drag launch controls.
+- Implemented gameplay mechanics including portals, bombs, collectible coins, and skills.
+
+**Technical Focus:** `Unity` · `C#` · `Game Physics` · `Gameplay Programming`
+
+<details>
+<summary><b>🔎 Implementation Details</b></summary>
+
+<br>
+
+- Calculated projectile trajectories using gravity-based motion equations.
+- Visualized predicted trajectories using Unity LineRenderer.
+- Implemented drag-based launch power and direction controls.
+- Applied nonlinear power adjustment to improve control responsiveness.
+- Developed boss cutscenes, camera behavior, and sound management.
+- Integrated custom gameplay mechanics with Unity's physics system.
+
+</details>
 
 <br>
 
@@ -372,7 +509,7 @@ Understanding why unknown objects are missed or incorrectly classified, with an 
 
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-<img src="https://img.shields.io/badge/NVIDIA_CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
+<img src="https://img.shields.io/badge/CUDA--Enabled_GPU-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA-enabled GPU" />
 <img src="https://img.shields.io/badge/Flask-303030?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
 
 <br>
