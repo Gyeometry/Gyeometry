@@ -181,36 +181,167 @@ Understanding why unknown objects are missed or incorrectly classified, with an 
 
 ---
 
-## 💻 Selected Projects
+## 💻 Selected Course Projects
 
-### 🏆 Face Anti-Spoofing Image Classification
+### 🏆 01. Face Anti-Spoofing Image Classification
 
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-1B3A6B?style=flat-square)
 ![VLM](https://img.shields.io/badge/Vision--Language-7C3AED?style=flat-square)
-![1st Place](https://img.shields.io/badge/Competition-1st_Place-238636?style=flat-square)
+![1st Place](https://img.shields.io/badge/Course_Competition-1st_Place-238636?style=flat-square)
 
-**AI Course Competition | Hanbat National University, 2026**
+**AI Course Team Competition | Hanbat National University, 2026**
 
 - Developed a classifier to distinguish genuine face images from spoofing attacks.
 - Utilized MoGA-ETA image-text representations and Prompt-Diff relation features.
 - Applied MLP classification, test-time augmentation, and soft ensembling.
-- Achieved **99.41% private leaderboard accuracy**.
-- Ranked **1st in a 3-person team competition** involving approximately 80 course participants.
+- Achieved **99.41% accuracy** on the final private leaderboard.
+- Ranked **1st as a 3-member team** in a course-level competition involving approximately **80 students**.
 
 <br>
 
-### ⚙️ Embedded Vision & Smart Elevator Control
+### ⚙️ 02. Embedded Vision & Smart Elevator Control
 
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 ![FPGA](https://img.shields.io/badge/FPGA-1B3A6B?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
-**Embedded Systems Team Project**
+**Regular Coursework Team Project | Hanbat National University**
 
-- Implemented camera-based person detection and occupancy analysis on Raspberry Pi.
-- Developed decision logic to determine elevator occupancy conditions.
-- Integrated Raspberry Pi and FPGA using GPIO-based signal communication.
-- Implemented motor-control functionality and connected visual analysis with physical system control.
+**Project Overview:** A prototype elevator control system integrating camera-based occupancy detection with FPGA-based hardware control.
+
+**My Contributions**
+- Implemented Raspberry Pi-based person detection and occupancy analysis using camera input.
+- Developed occupancy decision logic based on detected person regions.
+- Integrated Raspberry Pi and FPGA through GPIO-based state communication.
+- Worked on motor-control functionality and hardware integration.
+
+**System Architecture**
+
+`Camera → Raspberry Pi → GPIO → FPGA → Elevator Control`
+
+<br>
+
+### 🔐 03. IoT Smart Door Lock with Face Recognition
+
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-1B3A6B?style=flat-square&logo=flask&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-7C3AED?style=flat-square)
+
+**Regular Coursework Team Project | Hanbat National University**
+
+**Project Overview:** An IoT-based smart door lock prototype using distributed face recognition and mobile-based user management.
+
+**My Contributions**
+- Built the Raspberry Pi server for user data management and communication.
+- Developed an Android application for user registration, face-image upload, and management.
+- Integrated the Android application with the Raspberry Pi server using HTTP-based APIs.
+- Worked on server-device communication within a distributed IoT architecture.
+
+**System Features**
+- Raspberry Pi 3 server and Raspberry Pi 5 edge-device architecture.
+- Face detection using OpenCV Haar Cascade.
+- Face embedding extraction using MobileFaceNet.
+- Cosine similarity-based face verification.
+- HTTP-based communication and synchronization.
+
+**System Architecture**
+
+`Android App → Raspberry Pi 3 Server → Raspberry Pi 5 Edge Device → Door Lock`
+
+<br>
+
+### 🎮 04. Angry Humans — 3D Physics-Based Slingshot Game
+
+![Unity](https://img.shields.io/badge/Unity-20232A?style=flat-square&logo=unity&logoColor=white)
+![CSharp](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=sharp&logoColor=white)
+![Game Physics](https://img.shields.io/badge/Game_Physics-1B3A6B?style=flat-square)
+![Course Project](https://img.shields.io/badge/Course_Project-7C3AED?style=flat-square)
+
+**Regular Coursework Team Project | Hanbat National University | 2-Member Team**
+
+**Project Overview:** A 3D physics-based slingshot puzzle game developed with Unity, featuring projectile mechanics, destructible structures, and interactive gameplay elements.
+
+**My Contributions**
+- Implemented projectile launching, collision interactions, and physics-based structure destruction.
+- Developed trajectory prediction and visualization using gravity-based equations and Unity LineRenderer.
+- Implemented mouse-drag controls for launch direction and power, including nonlinear power adjustment for better usability.
+- Developed interactive mechanics including portals, bombs, collectible coins, and skill activation.
+- Implemented additional gameplay features such as boss cutscenes, camera controls, and sound management.
+
+**Technical Focus**
+
+`Unity` · `C#` · `Projectile Motion` · `Collision Handling` · `Gameplay Programming`
+
+<br>
+
+---
+
+## 🏅 AI Competitions
+
+### 🌬️ 01. BARAM 2026 — Wind Power Forecasting
+
+![DACON](https://img.shields.io/badge/Platform-DACON-1B3A6B?style=flat-square)
+![Rank](https://img.shields.io/badge/Rank-103%20%2F%20985-238636?style=flat-square)
+![Top](https://img.shields.io/badge/Top-10.5%25-7C3AED?style=flat-square)
+
+**3rd Wind Power Forecasting AI Competition — BARAM 2026**
+
+**Competition Result:** 103rd out of 985 (Top 10.5%)
+
+**Project Overview:** A machine-learning competition focused on forecasting wind power generation under accuracy and reliability evaluation criteria.
+
+**Technical Approach**
+- Developed group-specific wind power prediction models using LightGBM.
+- Conducted feature engineering and comparative experiments across multiple feature configurations.
+- Evaluated forecasting performance using nMAE and FiCR-related metrics.
+- Explored reliability-aware post-processing to improve the competition's combined evaluation score.
+
+**Observed Public Leaderboard Improvements**
+- Total Score: **0.6149 → 0.6269**
+- FiCR: **0.3599 → 0.3806**
+
+**Tech Stack**
+
+`Python` · `LightGBM` · `Feature Engineering` · `Time-Series Forecasting`
+
+🔗 [Competition Page](https://dacon.io/competitions/official/236727/overview/description)
+
+<br>
+
+### 🚗 02. Black-Box Video Forensics for Intentional Collision Analysis
+
+![DACON](https://img.shields.io/badge/Platform-DACON-1B3A6B?style=flat-square)
+![Rank](https://img.shields.io/badge/Leaderboard-114%20%2F%20321-D29922?style=flat-square)
+![Video](https://img.shields.io/badge/Video_Analysis-7C3AED?style=flat-square)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+**AI Competition | DACON, 2026**
+
+**Leaderboard Snapshot:** 114th out of 321 teams (final ranking unverified)
+
+**Final Score:** **0.50266**
+
+**Project Overview:** A multi-stage AI-assisted video forensics pipeline for analyzing black-box recordings, collision events, and vehicle driving behavior under an offline inference time limit.
+
+**Technical Approach**
+
+- **Stage 1 — Recaptured-Video Detection:** Integrated Swin Transformer classification, temporal forensic features, and DINO-based auxiliary analysis.
+- **Stage 2 — Collision Scene Analysis:** Combined vehicle detection, tracking, trajectory features, geometric entry-time estimation, and road-corridor reasoning.
+- **Stage 3 — Vehicle Motion Recognition:** Applied optical flow, RANSAC-based camera motion estimation, RAFT-small, and DINOv2 context-based correction.
+- Evaluated stage-level performance through repeated competition submissions and investigated robustness under runtime constraints.
+- Performed manual review of collision scenes, experimental validation, submission decisions, and checks of external data and model licensing.
+
+**Technical Challenges**
+- Managing multiple video-analysis models within a 60-minute offline inference limit.
+- Maintaining consistency across independent stage predictions.
+- Debugging submission packaging issues, missing checkpoints, and model dependencies.
+
+**Tech Stack**
+
+`Python` · `PyTorch` · `OpenCV` · `Swin Transformer` · `DINOv2` · `RAFT` · `YOLOP` · `Object Tracking`
+
+🔗 [Competition Page](https://www.dacon.io/competitions/official/236753/overview/description)
 
 <br>
 
