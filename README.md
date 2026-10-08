@@ -19,6 +19,24 @@
 
 ---
 
+## 📬 Contact
+
+<div align="center">
+
+**Feel free to reach out for research discussions, collaborations, or opportunities.**
+
+<br>
+
+<a href="mailto:kimkyum03@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-kimkyum03%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+</a>
+
+</div>
+
+<br>
+
+---
+
 ## 👋 About Me
 
 Hi! I'm **Gyeom Kim**, an undergraduate researcher studying **Computer Engineering** at **Hanbat National University**, South Korea.
@@ -71,11 +89,62 @@ I'm interested in understanding **why models fail**, exploring alternative appro
 
 <br>
 
+---
+
+## 📚 Publications & Manuscripts
+
+### 🟢 Accepted
+
+**[C1] Density-Aware Query Score Adjustment for Tiny Object Detection**
+
+**Gyeom Kim**, Ki-won Eom, Seong-min Pyo, Haneol Jang
+
+*2026 KIBME Summer Conference, July 2026*
+
+![Accepted](https://img.shields.io/badge/Status-Accepted-238636?style=flat-square)
+![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
+
+> Proposed a density-aware query score adjustment method for DETR-based tiny object detection, improving F1 scores while preserving mAP.
+
+<br>
+
+### 🟡 Under Review
+
+**[C2] Improving Tiny Object Detection through High-Frequency Enhancement of High-Resolution Features**
+
+**Gyeom Kim**, Ki-won Eom, Haneol Jang
+
+*2026 KIBME Fall Conference*
+
+![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
+![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
+
+> Investigates high-frequency enhancement of high-resolution features for detecting extremely small objects in aerial imagery.
+
+<br>
+
+**[J1] Improving Tiny Object Detection via High-Resolution Feature Refinement**
+
+**Gyeom Kim**, Ki-won Eom, Haneol Jang
+
+*Submitted to IKEEE*
+
+![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
+![Journal](https://img.shields.io/badge/Type-Journal_Manuscript-7C3AED?style=flat-square)
+
+> Investigates learnable high-resolution feature refinement to improve localization and detection of very tiny objects.
+
+<br>
+
+---
+
 <div align="center">
 
 *"Understanding what a model misses is the first step toward making it better."*
 
 </div>
 
----
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1020,45:1B3A6B,100:7C3AED&height=120&section=footer" width="100%" alt="Footer" />
 
