@@ -347,6 +347,63 @@ Understanding why unknown objects are missed or incorrectly classified, with an 
 
 ---
 
+## 🛠️ Technical Skills
+
+<div align="center">
+
+### Programming Languages
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=sharp&logoColor=white" alt="C Sharp" />
+
+<br>
+
+### AI & Computer Vision
+
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+<img src="https://img.shields.io/badge/Torchvision-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="Torchvision" />
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+<img src="https://img.shields.io/badge/LightGBM-247A36?style=for-the-badge" alt="LightGBM" />
+
+<br>
+
+### Development Tools
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+<img src="https://img.shields.io/badge/NVIDIA_CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
+<img src="https://img.shields.io/badge/Flask-303030?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+
+<br>
+
+### Game Development & Embedded Systems
+
+<img src="https://img.shields.io/badge/Unity-20232A?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" />
+<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio" />
+<img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
+<img src="https://img.shields.io/badge/FPGA_Integration-1B3A6B?style=for-the-badge" alt="FPGA Integration" />
+
+</div>
+
+<br>
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Gyeometry&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B1020&title_color=65E5FF&text_color=FFFFFF&icon_color=A78BFA" alt="Gyeometry GitHub Stats" height="180" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gyeometry&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1020&title_color=65E5FF&text_color=FFFFFF" alt="Most Used Languages" height="180" />
+
+</div>
+
+<br>
+
+---
+
 <div align="center">
 
 *"Understanding what a model misses is the first step toward making it better."*
