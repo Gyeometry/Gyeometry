@@ -32,7 +32,7 @@
 </a>
 
 <a href="https://www.linkedin.com/in/gyeom-kim-234005440/">
-<img src="https://img.shields.io/badge/LinkedIn%20%7C%20Gyeom%20Kim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/LinkedIn%20%7C%20Gyeom%20Kim-0A66C2?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjk0djUuNjY2SDkuMzUxVjloMy40MTR2MS41NjFoLjA0OWMuNDc2LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNjLTEuMTQ0IDAtMi4wNjMtLjkyNy0yLjA2My0yLjA2NyAwLTEuMTM5LjkyLTIuMDY2IDIuMDYzLTIuMDY2IDEuMTQgMCAyLjA2Ni45MjcgMi4wNjYgMi4wNjYgMCAxLjE0LS45MjYgMi4wNjctMi4wNjYgMi4wNjd6bTEuNzgyIDEzLjAxOUgzLjU1NVY5SDcuMTJ2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn" />
 </a>
 
 </div>
