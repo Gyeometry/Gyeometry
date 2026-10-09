@@ -287,7 +287,7 @@ Ongoing research. Current results are used primarily for failure diagnosis and m
 
 **AI Competition | DACON, 2026**
 
-**Leaderboard Snapshot:** 114th out of 321 teams (final ranking unverified)
+**Final Rank:** 114th out of 321 teams
 
 **Leaderboard Score:** **0.50266**
 
@@ -520,6 +520,34 @@ The architecture summary is based on preserved project artifacts. The latest pre
 <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio" />
 <img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
 <img src="https://img.shields.io/badge/FPGA_Integration-1B3A6B?style=for-the-badge" alt="FPGA Integration" />
+
+</div>
+
+<br>
+
+---
+
+## 🎓 Certifications
+
+<div align="center">
+
+### Deep Learning Specialization
+
+**DeepLearning.AI · Coursera**
+
+*Completed August 2025*
+
+<a href="https://coursera.org/verify/specialization/PAV4YIF991GO">
+<img src="https://img.shields.io/badge/Deep_Learning_Specialization-Verified-238636?style=for-the-badge&logo=coursera&logoColor=white" alt="Deep Learning Specialization Certificate" />
+</a>
+
+<br><br>
+
+Completed all five courses in the Deep Learning Specialization, covering neural networks, optimization, convolutional neural networks, sequence models, and machine-learning project structuring.
+
+<br>
+
+📜 [View Verified Certificate](https://coursera.org/verify/specialization/PAV4YIF991GO)
 
 </div>
 
