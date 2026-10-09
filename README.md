@@ -99,7 +99,7 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 
 **Gyeom Kim**, Ki-won Eom, Seong-min Pyo, Haneol Jang
 
-*2026 KIBME Summer Conference, July 2026*
+*2026 KIBME Summer Conference, June 2026*
 
 ![Accepted](https://img.shields.io/badge/Status-Accepted-238636?style=flat-square)
 ![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
