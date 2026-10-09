@@ -28,7 +28,11 @@
 <br>
 
 <a href="mailto:kimkyum03@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-kimkyum03%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+<img src="https://img.shields.io/badge/Gmail%20%7C%20kimkyum03%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+</a>
+
+<a href="https://www.linkedin.com/in/gyeom-kim-234005440/">
+<img src="https://img.shields.io/badge/LinkedIn%20%7C%20Gyeom%20Kim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
 </div>
