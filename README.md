@@ -1,10 +1,10 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1020,45:1B3A6B,100:7C3AED&height=250&section=header&text=GYEOMETRY&fontSize=65&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Seeing%20the%20Small.%20Exploring%20the%20Unknown.&descAlignY=60&descSize=19" width="100%" alt="Gyeometry Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1020,45:1B3A6B,100:7C3AED&height=250&section=header&text=GYEOMETRY&fontSize=65&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Seeing%20the%20Small.%20Learning%20from%20Failure.&descAlignY=60&descSize=19" width="100%" alt="Gyeometry Header" />
 
 <a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=65E5FF&center=true&vCenter=true&width=780&lines=Undergraduate+Researcher+at+Hanbat+National+University;Tiny+Object+Detection+%7C+Aerial+Imagery;Open-Set+Segmentation+%7C+Forward-Looking+Sonar" alt="Typing Animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=65E5FF&center=true&vCenter=true&width=780&lines=Undergraduate+Researcher+at+Hanbat+National+University;Tiny+Object+Detection+%7C+Aerial+Imagery;Semi-Supervised+Segmentation+%7C+Sonar;Reinforcement+Learning+%7C+Craftax" alt="Typing Animation" />
 </a>
 
 <br>
@@ -45,14 +45,14 @@
 
 Hi! I'm **Gyeom Kim**, an undergraduate researcher in **Computer Engineering** at **Hanbat National University**, South Korea.
 
-My research focuses on **Computer Vision and Deep Learning**, particularly tiny object detection and open-set semantic segmentation.
+My research spans **Computer Vision, Deep Learning, and Reinforcement Learning**, with a focus on understanding where learning systems fail and testing ways to improve them through controlled experiments.
 
-I'm interested in understanding **why models fail**, identifying their limitations, and developing better approaches through systematic experimentation.
+My current projects include **tiny object detection in aerial imagery**, **semi-supervised semantic segmentation for forward-looking sonar**, **fully supervised sonar data augmentation**, and **policy failure analysis in reinforcement learning**.
 
 - 🎓 **Education:** Hanbat National University, Computer Engineering
-- 🔬 **Research:** Tiny Object Detection & Open-Set Semantic Segmentation
-- 🧪 **Approach:** Failure Analysis, Model Improvement & Experimental Validation
-- 🎯 **Interest:** Robust Visual Recognition under Challenging Conditions
+- 🔬 **Research:** Tiny Object Detection · Forward-Looking Sonar Segmentation · Reinforcement Learning
+- 🧪 **Approach:** Failure Analysis · Controlled Experiments · Reproducibility
+- 🎯 **Interest:** Reliable learning and visual recognition under limited or imperfect supervision
 
 <br>
 
@@ -67,8 +67,7 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 <strong>Detecting objects that are easy to miss.</strong>
 
 <ul>
-<li>Aerial imagery analysis</li>
-<li>DETR-based object detection</li>
+<li>Aerial imagery and DETR-based detection</li>
 <li>High-resolution feature refinement</li>
 <li>Very tiny object localization</li>
 </ul>
@@ -76,15 +75,42 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 </td>
 <td width="50%" valign="top">
 
-<h3>🌊 Open-Set Segmentation</h3>
+<h3>🌊 Forward-Looking Sonar Segmentation</h3>
 
-<strong>Recognizing what models have never seen.</strong>
+<strong>Recovering foreground objects under limited supervision.</strong>
 
 <ul>
-<li>Forward-looking sonar imagery</li>
-<li>Unknown object discovery</li>
-<li>Open-set semantic segmentation</li>
-<li>Uncertainty and failure analysis</li>
+<li>Semi-supervised semantic segmentation</li>
+<li>Pseudo-label reliability and missing objects</li>
+<li>Foreground recovery vs. background false positives</li>
+</ul>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🧩 Data Augmentation & Robustness</h3>
+
+<strong>Testing what improves generalization.</strong>
+
+<ul>
+<li>CutMix, FMix, and object-aware augmentation</li>
+<li>Controlled baselines and multi-seed validation</li>
+<li>Failure cases and distribution shift</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>🎮 Reinforcement Learning</h3>
+
+<strong>Understanding why policies miss opportunities.</strong>
+
+<ul>
+<li>Model-based RL and policy evaluation</li>
+<li>Partially observable environments</li>
+<li>Action grounding and decision diagnostics</li>
 </ul>
 
 </td>
@@ -97,7 +123,7 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 
 ## 📚 Publications & Manuscripts
 
-### 🟢 Accepted
+### 🟢 Accepted & Presented — Conference Papers
 
 **[C1] Density-Aware Query Score Adjustment for Tiny Object Detection**
 
@@ -106,37 +132,41 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 *2026 KIBME Summer Conference, June 2026*
 
 ![Accepted](https://img.shields.io/badge/Status-Accepted-238636?style=flat-square)
+![Presented](https://img.shields.io/badge/Presentation-Completed-087E8B?style=flat-square)
 ![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
 
 > Proposed an inference-time density-aware query score adjustment method, improving F1 by **0.3–0.5 percentage points** across Dome-DETR model scales while maintaining comparable mAP on AI-TODv2.
 
 <br>
 
-### 🟡 Under Review
-
 **[C2] Improving Tiny Object Detection through High-Frequency Enhancement of High-Resolution Features**
 
 **Gyeom Kim**, Ki-won Eom, Haneol Jang
 
-*2026 KIBME Fall Conference*
+*2026 KIBME Fall Conference, November 2026*
 
-![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
+![Accepted](https://img.shields.io/badge/Status-Accepted-238636?style=flat-square)
+![Presented](https://img.shields.io/badge/Presentation-Completed-087E8B?style=flat-square)
 ![Conference](https://img.shields.io/badge/Type-Conference_Paper-1B3A6B?style=flat-square)
 
-> Proposed local high-frequency enhancement of high-resolution features, improving the mean AP across Very Tiny, Tiny, and Small groups by **3.3 percentage points** over SMWG-DETR.
+> Proposed local high-frequency enhancement of high-resolution features, improving the mean AP across Very Tiny, Tiny, and Small groups by **3.3 percentage points** over SMWG-DETR on AI-TODv2.
 
 <br>
+
+### 🟡 Under Review — Journal Manuscript
 
 **[J1] Improving Tiny Object Detection via High-Resolution Feature Refinement**
 
 **Gyeom Kim**, Ki-won Eom, Haneol Jang
 
-*Submitted to IKEEE*
+*Submitted to IKEEE — Under Review (not yet published)*
 
 ![Under Review](https://img.shields.io/badge/Status-Under_Review-D29922?style=flat-square)
 ![Journal](https://img.shields.io/badge/Type-Journal_Manuscript-7C3AED?style=flat-square)
 
 > Proposed learnable high-resolution feature refinement, achieving **+3.7 percentage points in mean AP** and **+5.6 percentage points in Very Tiny AP** over SMWG-DETR on AI-TODv2.
+
+<sub>**Metric note:** “Mean AP” above is the arithmetic mean of the AP scores for Very Tiny, Tiny, and Small object groups, not the overall COCO mAP.</sub>
 
 <br>
 
@@ -152,11 +182,11 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 
 **Research Focus:** Improving the detection and localization of extremely small objects in aerial imagery.
 
-- Investigated limitations of DETR-based detectors for tiny objects using AI-TODv2.
-- Explored density-aware query selection and high-resolution feature refinement.
-- Conducted comparative experiments and failure analysis across different object sizes.
+- Investigated limitations of DETR-based detectors on AI-TODv2.
+- Studied density-aware query score adjustment, high-resolution features, and local high-frequency enhancement.
+- Designed comparative evaluations across Very Tiny, Tiny, and Small object groups.
 
-**Key Result:** Improved Very Tiny AP by **5.6 percentage points** compared with SMWG-DETR using high-resolution feature refinement.
+**Key Result:** Improved Very Tiny AP by **5.6 percentage points** relative to SMWG-DETR in the high-resolution feature refinement study.
 
 <details>
 <summary><b>🔎 Research Details & Experimental Approach</b></summary>
@@ -167,73 +197,155 @@ I'm interested in understanding **why models fail**, identifying their limitatio
 
 - Analyzed query selection imbalance between sparse and dense object regions.
 - Adjusted encoder query scores based on local density information.
-- Evaluated the method across Dome-DETR-S, M, and L.
-- Observed consistent F1 improvements while largely preserving mAP.
+- Evaluated the method across Dome-DETR-S, M, and L; observed F1 improvements while largely preserving mAP.
 
 **2. High-Resolution Feature Enhancement**
 
-- Investigated spatial information loss caused by feature downsampling.
 - Introduced stride-4 high-resolution features into the detection pipeline.
 - Extracted local high-frequency components using average-pooling residuals.
-- Evaluated detection performance across Very Tiny, Tiny, and Small object groups.
+- Evaluated detection performance by object-size group.
 
 **3. Learnable Feature Refinement**
 
-- Extended high-frequency enhancement using lightweight depthwise and pointwise convolutions.
-- Applied a learnable scaling parameter to control residual feature contributions.
-- Compared performance against SMWG-DETR and other DETR-based detectors.
-- Analyzed detection accuracy, localization quality, and computational cost.
+- Extended the feature enhancement with lightweight depthwise and pointwise convolutions.
+- Applied learnable residual scaling and compared with SMWG-DETR.
+- Analyzed localization accuracy and computational overhead.
 
-**Evaluation Note**
-
-The reported mean AP is the equally weighted arithmetic mean of AP across the Very Tiny, Tiny, and Small object groups, rather than overall COCO mAP.
+**Evaluation Note:** The reported mean AP is the equally weighted mean over Very Tiny, Tiny, and Small AP, not overall COCO mAP.
 
 </details>
 
 <br>
 
-### 02. Open-Set Semantic Segmentation for Forward-Looking Sonar
+### 02. Semi-Supervised Semantic Segmentation for Forward-Looking Sonar
 
 ![Segmentation](https://img.shields.io/badge/Semantic_Segmentation-1B3A6B?style=flat-square)
-![Open Set](https://img.shields.io/badge/Open--Set_Recognition-7C3AED?style=flat-square)
+![Semi-supervised](https://img.shields.io/badge/Semi--Supervised_Learning-7C3AED?style=flat-square)
 ![Ongoing](https://img.shields.io/badge/Research-Ongoing-087E8B?style=flat-square)
 
-**Research Focus:** Discovering previously unseen objects in underwater sonar imagery.
+**Research Focus:** Recovering missed foreground objects while controlling false positives under limited pixel-level supervision.
 
-- Investigating open-set semantic segmentation using Forward-Looking Sonar (FLS) imagery.
-- Analyzing the limitations of uncertainty-based unknown-object detection.
-- Designing controlled experiments to isolate the causes of unknown-object detection failures.
+- Benchmarked supervised learning, UniMatch V2, CTFS, and FTC-Seg on FLS marine-debris segmentation data.
+- Investigated why missing foreground objects can remain assigned to high-confidence background pseudo-labels.
+- Analyzed the trade-off between recovering missed objects and introducing background false positives.
+- Evaluated alternative representations, including Cartesian and polar sonar inputs, under matched training and evaluation protocols.
 
-**Current Direction:** Improving reliable unknown-object discovery while reducing false-positive predictions.
+**Research Status:** Ongoing method development and failure analysis. No new method is claimed to outperform the validated baselines consistently.
 
 <details>
 <summary><b>🔎 Research Details & Experimental Approach</b></summary>
 
 <br>
 
-**1. Baseline Analysis**
+**1. Benchmark & Supervision Protocol**
 
-- Evaluated open-set segmentation performance under different unknown-object difficulty levels.
-- Analyzed precision, recall, F1, AUROC, and AUPRC.
-- Investigated false-positive predictions and failure cases in unknown-object detection.
+- Used the official FLSMDD segmentation split (train: 1,000; validation: 251; test: 617).
+- Investigated a 10%-labeled setting (100 labeled images and 900 unlabeled images).
+- Compared pseudo-label reliability, class-wise IoU, foreground recall, and background false positives.
 
-**2. Unknown-Object Proposal Investigation**
+**2. Failure-Driven Analysis**
 
-- Examined cases where unknown-object candidates were never formed or were lost during inference.
-- Evaluated alternative proposal-generation strategies.
-- Analyzed trade-offs between unknown-object recovery and false-positive burden.
+- Studied common missing-object cases and false-negative regions under high-confidence background predictions.
+- Tested conditional foreground recovery and counterevidence-based candidate selection.
+- Separated candidate discovery from class discrimination and supervision decisions.
 
-**3. Controlled Experiments**
+**3. Representation & Evaluation Controls**
 
-- Designed direct-supervision experiments to investigate the upper bound of known/unknown separability.
-- Compared native open-set inference with explicitly supervised unknown-object recognition.
-- Studied the effect of backbone pretraining on known-class accuracy and unknown-object discovery.
+- Compared matched Cartesian/polar models and spatial-frequency variants.
+- Analyzed sonar fan support, resampling, object size, and evaluation-grid sensitivity.
+- Found that the polar representation did not consistently outperform Cartesian input in the primary controlled comparison.
 
-**Research Status**
-
-Ongoing research. Current results are used primarily for failure diagnosis and method development rather than claims of a finalized open-set solution.
+**Research Note:** Baseline scores and exploratory corrections are not evidence of a finalized new segmentation method or state-of-the-art performance.
 
 </details>
+
+<br>
+
+### 03. Fully Supervised FLS Segmentation & Data Augmentation
+
+![FLS](https://img.shields.io/badge/Forward--Looking_Sonar-1B3A6B?style=flat-square)
+![Augmentation](https://img.shields.io/badge/Data_Augmentation-7C3AED?style=flat-square)
+![Ongoing](https://img.shields.io/badge/Research-Ongoing-087E8B?style=flat-square)
+
+**Research Focus:** Evaluating practical augmentation methods for underwater sonar semantic segmentation with full training-label supervision.
+
+- Compared object-aware zoom, CutMix, FMix, and standard augmentation under controlled training protocols.
+- Evaluated paired augmentation effects across seeds and out-of-fold validation groups.
+- Investigated improvements in foreground recall alongside increases in background false positives.
+
+**Observed Result:** In **5-fold, 3-seed out-of-fold evaluation**, FMix and CutMix improved mIoU over the reference augmentation baseline by **+1.332** and **+0.985 percentage points**, respectively. The relative superiority of the two methods is not established.
+
+<details>
+<summary><b>🔎 Research Details & Experimental Approach</b></summary>
+
+<br>
+
+- Trained fully supervised semantic segmentation models on FLSMDD using the 1,000-image training split.
+- Reproduced multiple augmentation configurations with paired seed comparisons.
+- Evaluated foreground-versus-background behavior, class-specific changes, and error cases.
+- Performed a separate 94-image confirmation analysis; FMix showed **+1.511 percentage points** against the reference baseline (reported 95% CI: **[+0.176, +3.795]**). This set had prior analysis exposure and is not described as a pristine independent holdout.
+- Prepared a conference-style empirical analysis; **no acceptance or publication is claimed** for this ongoing study.
+
+**Scope Note:** This project is distinct from the 10%-labeled semi-supervised FLS study above. Their results are not directly interchangeable.
+
+</details>
+
+<br>
+
+### 04. Reinforcement Learning & Policy Failure Analysis
+
+![RL](https://img.shields.io/badge/Reinforcement_Learning-1B3A6B?style=flat-square)
+![Model-based RL](https://img.shields.io/badge/Model--Based_RL-7C3AED?style=flat-square)
+![Ongoing](https://img.shields.io/badge/Research-Ongoing-087E8B?style=flat-square)
+
+**Research Focus:** Diagnosing missed actions, planning limitations, and policy failure modes in sequential decision-making.
+
+- Reproduced **TD-MPC2** continuous-control baselines and investigated actor-versus-planner behavior.
+- Evaluated recurrent policies in **Craftax** and partially observable environments, including **RockSample**.
+- Analyzed policy decisions at attainable crafting and resource-use opportunities using rollout traces and controlled comparisons.
+- Examined whether vision-language model guidance adds useful evidence beyond symbolic state information.
+
+**Research Status:** Ongoing investigation. Current experiments have not established a novel reinforcement-learning method with reproducible return improvements.
+
+<details>
+<summary><b>🔎 Research Details & Experimental Approach</b></summary>
+
+<br>
+
+**1. TD-MPC2 Reproduction & Diagnostics**
+
+- Reproduced continuous-control performance in Cartpole, Walker, and Cheetah tasks.
+- Compared actor actions, planning, learned value estimates, and actual rollout outcomes.
+
+**2. PPO-RNN & Craftax**
+
+- Benchmarked recurrent policies, controlled interventions, and state-matched comparisons.
+- Analyzed rare action opportunities, crafting sequences, and survival/return trade-offs.
+- Separated successful local interventions from general improvements in full-episode return.
+
+**3. Vision-Language Diagnostics**
+
+- Compared visual evidence, symbolic trajectory data, and VLM-based judgments for failure interpretation.
+- Identified limitations of frame selection and action grounding in the evaluated setups.
+
+**Research Note:** The project is exploratory and has not yet produced a peer-reviewed publication.
+
+</details>
+
+<br>
+
+### 05. Earlier Research — Open-Set Sonar Segmentation
+
+![Open Set](https://img.shields.io/badge/Open--Set_Recognition-7C3AED?style=flat-square)
+![Earlier Work](https://img.shields.io/badge/Earlier_Research-64748B?style=flat-square)
+
+**Research Focus:** Detecting previously unseen objects in forward-looking sonar images.
+
+- Evaluated uncertainty-based unknown-object detection and alternative proposal-generation strategies.
+- Used controlled supervision and error analysis to distinguish proposal failures from recognition failures.
+- Investigated the balance between unknown-object recovery and false-positive predictions.
+
+**Research Status:** Earlier exploratory work that informed the shift toward closed-set semi-supervised sonar segmentation. No finalized open-set solution is claimed.
 
 <br>
 
@@ -499,13 +611,15 @@ The architecture summary is based on preserved project artifacts. The latest pre
 
 <br>
 
-### AI & Computer Vision
+### AI, Computer Vision & Reinforcement Learning
 
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
 <img src="https://img.shields.io/badge/Torchvision-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="Torchvision" />
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
 <img src="https://img.shields.io/badge/LightGBM-247A36?style=for-the-badge" alt="LightGBM" />
+<img src="https://img.shields.io/badge/Reinforcement_Learning-1B3A6B?style=for-the-badge" alt="Reinforcement Learning" />
+<img src="https://img.shields.io/badge/Semantic_Segmentation-7C3AED?style=for-the-badge" alt="Semantic Segmentation" />
 
 <br>
 
@@ -582,4 +696,3 @@ Completed all five courses in the Deep Learning Specialization, covering neural 
 <br>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1020,45:1B3A6B,100:7C3AED&height=120&section=footer" width="100%" alt="Footer" />
-
